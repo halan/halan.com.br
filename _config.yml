@@ -1,5 +1,11 @@
 name: Dat site title tho
-markdown: redcarpet
-highlighter: pygments
 description: 
 url: "http://yourdomain.com"
+
+exclude: [ Gemfile, Gemfile.lock]
+markdown: redcarpet
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: :compressed
+
