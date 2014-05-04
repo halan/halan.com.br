@@ -2,6 +2,8 @@ name: Dat site title tho
 description: 
 url: "http://yourdomain.com"
 
+locale: 'pt-BR'
+
 exclude: [ Gemfile, Gemfile.lock]
 markdown: redcarpet
 highlighter: pygments
