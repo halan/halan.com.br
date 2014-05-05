@@ -16,8 +16,7 @@ main {
     position: absolute;
     right: 0;
     top: 0;
-    color: $base-accent-color;
-    opacity: .2;
+    color: lighten($base-accent-color, 10%);
 
     time {
       font-size: 1em;
@@ -43,6 +42,7 @@ main {
   }
 
   & > footer {
+    color: lighten($base-accent-color, 10%);
     @include span-columns(12);
     margin-top: 3em;
     border-top: 3px solid;
