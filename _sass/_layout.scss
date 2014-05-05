@@ -1,10 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  border-top: 5px solid $base-accent-color; 
+}
+
 main {
   @include outer-container;
+  margin-top: 1em;
 
-  header .site-title {
+  & > header {
+    @include span-columns(3)
+  }
+
+  & > header .last-modified {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: $base-accent-color;
+    opacity: .2;
+
+    time {
+      font-size: 1em;
+    }
+  }
+
+  & > header .site-title {
     margin-bottom: 1em;
     display: block;
+    font-size: 2em;
+    font-weight: 100;
+  }
+
+  & > section, & > article {
+    @include span-columns(6);
+  }
+
+  & > article > section > p {
+    font-size: 1em;
+    text-indent: .7em;
+    text-align: justify;
+    max-width: 40em;
+  }
+
+  & > footer {
+    @include span-columns(12);
+    margin-top: 3em;
+    border-top: 3px solid;
+  }
+
+  .home > nav {
+    margin: 1em;
   }
 }
 
-
+nav time {
+  font-size: 1.3em;
+}

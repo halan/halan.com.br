@@ -1,6 +1,8 @@
 // Typography
 ///////////////////////////////////////////////////////////////////////////////
-$sans-serif: $helvetica;
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,900);
+
+$sans-serif: 'Roboto';
 $serif: $georgia;
 
 $base-font-family: $sans-serif;
@@ -24,7 +26,7 @@ $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
 // Body Color
-$base-body-color: white;
+$base-body-color: $light-gray;
 
 //  Font Colors
 $base-font-color: $dark-gray;
