@@ -4,6 +4,11 @@ body {
   border-top: 5px solid $base-accent-color; 
 }
 
+pre > code {
+  display: block;
+  padding: 1em;
+}
+
 main {
   @include outer-container;
   margin-top: 1em;
