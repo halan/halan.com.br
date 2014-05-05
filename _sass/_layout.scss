@@ -1,0 +1,10 @@
+main {
+  @include outer-container;
+
+  header .site-title {
+    margin-bottom: 1em;
+    display: block;
+  }
+}
+
+
