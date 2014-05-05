@@ -1,19 +1,14 @@
 ---
 layout: default
 ---
-<section class="post">
+{% assign post = page %}
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h1 itemprop="headline">{{ page.title }}</h1>
+    <p>{% include date_published.html %}</p>
+  </header>
 
-  <article>
-    <header>
-      <h1>{{ page.title }}</h1>
-      <p>
-        <time>{{ page.date | localize: "%b %-d, %Y" }}</time>
-        {% if page.author %} • <span class="author">{{ page.author }}</span>{% endif %}
-        {% if page.meta %} • <span>{{ page.meta }}</span>{% endif %}
-      </p>
-    </header>
-
+  <section itemprop="articleBody">
     {{ content }}
-  </article>
-
-</section>
+  </section>
+</article>
