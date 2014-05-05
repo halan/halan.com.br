@@ -1,3 +1,10 @@
 <header>
-  <a class="site-title" href="/">{{ site.name }}</a>
+  <a class="site-title" href="/" itemprop="name">{{ site.name }}</a>
+  <div class="last-modified">
+    Última atualização
+    {% assign last_post = site.posts.last %}
+    <time datetime="{{ last_post.date | xmlschema }}" itemprop="dateModified">
+      {{ last_post.date | localize: "%B %-d, %Y"}}
+    </time>
+  </div>
 </header>
