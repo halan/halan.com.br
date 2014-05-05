@@ -2,13 +2,4 @@
 layout: default
 ---
 {% assign post = page %}
-<article itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  <header>
-    <h1 itemprop="headline">{{ page.title }}</h1>
-    <p>{% include date_published.html %}</p>
-  </header>
-
-  <section itemprop="articleBody">
-    {{ content }}
-  </section>
-</article>
+{% include blog_posting.html %}

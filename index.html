@@ -1,16 +1,4 @@
 ---
 layout: default
 ---
-<section class="home">
-  <nav>
-    <ul class="posts">
-      {% for post in site.posts %}
-        <li itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-          {% include date_published.html %}
-          {% include link_post.html %}
-        </li>
-      {% endfor %}
-      <li class="rss"><a href="/feed.xml">RSS</a></li>
-    </ul>
-  </nav>
-</section>
+<section class="home">{% include blog_posts.html %}</section>
